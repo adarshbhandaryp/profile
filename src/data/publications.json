@@ -1,0 +1,24 @@
+{
+    "journals": [
+        {
+            "title": "Deep learning algorithms for advanced mammography and breast cancer analysis",
+            "venue": "PhD Thesis",
+            "year": "2025"
+        }
+    ],
+    "conferences": [
+        {
+            "title": "MICCAI ODELIA Challenge 2025: Breast MRI Malignancy Classification",
+            "venue": "MICCAI",
+            "year": "2025",
+            "note": "Ranked 4th"
+        }
+    ],
+    "patents": [
+        {
+            "title": "Secure method for unlocking medical devices",
+            "venue": "Co-inventor",
+            "year": "2020"
+        }
+    ]
+}

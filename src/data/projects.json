@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Multimodal Vision-Language Models",
+        "description": "Designed foundation models for breast imaging analysis and assistive navigation for visually impaired users.",
+        "tags": [
+            "PyTorch",
+            "Transformers",
+            "Medical Imaging"
+        ],
+        "link": "#"
+    },
+    {
+        "title": "Large-Scale Mammography Dataset",
+        "description": "Curated a repository of ~100,000 images for large-scale self-supervised learning experimentation.",
+        "tags": [
+            "Big Data",
+            "Data Curation",
+            "Python"
+        ],
+        "link": "#"
+    },
+    {
+        "title": "MICCAI ODELIA Challenge 2025",
+        "description": "Ranked 4th in breast MRI malignancy classification using advanced deep learning techniques.",
+        "tags": [
+            "Deep Learning",
+            "MRI",
+            "Competition"
+        ],
+        "link": "#"
+    },
+    {
+        "title": "Mammography Lesion Detection",
+        "description": "Self-supervised learning methods improving classification and lesion detection performance.",
+        "tags": [
+            "Self-Supervised Learning",
+            "Detection",
+            "AI"
+        ],
+        "link": "#"
+    }
+]
