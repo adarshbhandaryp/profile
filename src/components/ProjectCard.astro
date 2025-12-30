@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  link?: string;
+}
+
+const { title, description, tags, link = "#" } = Astro.props;
+---
+
+<a href={link} class="block group">
+  <div class="glass-card p-8 rounded-2xl h-full relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-accent-cyan opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    
+    <div class="mb-6">
+      <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-accent transition-colors">{title}</h3>
+      <p class="text-text-muted leading-relaxed">{description}</p>
+    </div>
+    
+    <div class="flex flex-wrap gap-2 mt-auto">
+      {tags.map((tag) => (
+        <span class="px-3 py-1 text-xs font-medium text-accent-glow bg-accent/10 rounded-full border border-accent/20">
+          {tag}
+        </span>
+      ))}
+    </div>
+    
+    <!-- Hover Glow Effect -->
+    <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-accent/10 rounded-full blur-2xl group-hover:bg-accent/20 transition-all duration-500"></div>
+  </div>
+</a>

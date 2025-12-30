@@ -1,0 +1,68 @@
+---
+import publications from '../data/publications.json';
+---
+
+<div class="space-y-12">
+  
+  {publications.journals && (
+    <div>
+      <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-accent"></span>
+        Journals & Theses
+      </h3>
+      <div class="space-y-4">
+        {publications.journals.map((pub) => (
+          <div class="glass-card p-6 rounded-xl">
+            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
+            <div class="flex gap-4 text-sm text-text-muted">
+              <span class="text-accent">{pub.venue}</span>
+              <span>{pub.year}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {publications.conferences && (
+    <div>
+      <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-accent"></span>
+        Conferences
+      </h3>
+      <div class="space-y-4">
+        {publications.conferences.map((pub) => (
+          <div class="glass-card p-6 rounded-xl">
+            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
+            <div class="flex gap-4 text-sm text-text-muted">
+              <span class="text-accent">{pub.venue}</span>
+              <span>{pub.year}</span>
+              {pub.note && <span class="text-accent-cyan bg-accent-cyan/10 px-2 rounded text-xs flex items-center">{pub.note}</span>}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  {publications.patents && (
+    <div>
+      <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-accent"></span>
+        Patents
+      </h3>
+      <div class="space-y-4">
+        {publications.patents.map((pub) => (
+          <div class="glass-card p-6 rounded-xl border-l-4 border-l-accent-cyan">
+            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
+            <div class="flex gap-4 text-sm text-text-muted">
+              <span class="text-accent-cyan">{pub.venue}</span>
+              <span>{pub.year}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+</div>
