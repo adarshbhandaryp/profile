@@ -1,1 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Section from '../components/Section.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Timeline from '../components/Timeline.astro';
+import Publications from '../components/Publications.astro';
+import SkillsGrid from '../components/SkillsGrid.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 
+import projects from '../data/projects.json';
+import education from '../data/education.json';
+---
+
+<BaseLayout>
+  <Nav />
+  
+  <main>
+    <Hero />
+    
+    <Section id="work" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Featured Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {projects.map((project) => (
+          <ProjectCard 
+            title={project.title} 
+            description={project.description} 
+            tags={project.tags} 
+            link={project.link} 
+          />
+        ))}
+      </div>
+    </Section>
+
+    <Section id="experience" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Experience</h2>
+      <Timeline />
+    </Section>
+
+    <Section id="publications" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Publications</h2>
+      <Publications />
+    </Section>
+
+    <Section id="skills" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Technical Skills</h2>
+      <SkillsGrid />
+    </Section>
+
+    <Section id="education" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Education</h2>
+      <div class="space-y-6">
+        {education.map((edu) => (
+          <div class="glass-card p-8 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <h3 class="text-xl font-bold text-white">{edu.degree}</h3>
+              <p class="text-accent font-medium">{edu.school}</p>
+            </div>
+            <span class="text-text-muted font-mono bg-white/5 px-4 py-2 rounded-full text-sm">{edu.dates}</span>
+          </div>
+        ))}
+      </div>
+    </Section>
+
+    <Section id="contact" className="scroll-mt-20">
+      <Contact />
+    </Section>
+  </main>
+
+  <Footer />
+</BaseLayout>
