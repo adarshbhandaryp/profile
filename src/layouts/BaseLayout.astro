@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import profile from '../data/profile.json';
+
+interface Props {
+	title?: string;
+    description?: string;
+}
+
+const { title = profile.name, description = profile.tagline } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={profile.linkedin} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={profile.linkedin} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+
+		<title>{title}</title>
+	</head>
+	<body class="bg-primary text-text">
+        <div class="noise-bg"></div>
+        
+        <!-- Background Gradients -->
+        <div class="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent/10 rounded-full blur-[120px] animate-blob"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-cyan/10 rounded-full blur-[120px] animate-blob animation-delay-2000"></div>
+        </div>
+
+		<div class="relative z-10">
+            <slot />
+        </div>
+	</body>
+</html>
