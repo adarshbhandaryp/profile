@@ -1,32 +1,6 @@
-const talkPhotos = [
-  {
-    src: "/profile/bvm2024.jpeg",
-    alt: "Oral Presentation on Attention-Guided Erasing at BVM 2024, Erlangen, Germany",
-    caption: "Oral Presentation on Attention-Guided Erasing at BVM 2024"
-  },
-  {
-    src: "/profile/cvip2025.jpeg",
-    alt: "Oral Presentation on Dataset-Informed Transfer Learning (DITL) at CVIP 2025, Punjab, IIT Ropar, India",
-    caption: "Oral Presentation on DITL at CVIP 2025, IIT Ropar, India"
-  },
-  {
-    src: "/profile/ieee.jpeg",
-    alt: "Oral Presentation on MammoBLIP at IEEE Medical Imaging Conference (MIC) 2025, Yokohama, Japan",
-    caption: "Oral Presentation on MammoBLIP at IEEE MIC 2025, Yokohama"
-  },
-  {
-    src: "/profile/spie.jpeg",
-    alt: "Oral Presentation at Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
-    caption: "Oral Presentation at SPIE Medical Imaging 2024"
-  },
-  {
-    src: "/profile/prs2025.jpeg",
-    alt: "Presentation at Pattern Recognition Symposium, Austria",
-    caption: "Pattern Recognition Symposium, Austria"
-  }
-];
 ---
-
+import { talkPhotos } from '../data/gallery';
+---
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {talkPhotos.map((photo, index) => (
@@ -60,9 +34,8 @@ const talkPhotos = [
   </div>
 </div>
 
-<script define:vars={{ talkPhotos }}>
-  // Make photos available globally or within this closure
-  const photos = talkPhotos;
+<script>
+  import { talkPhotos } from '../data/gallery';
 
   function openLightbox(src, caption) {
     const lightbox = document.getElementById('lightbox');
@@ -86,15 +59,13 @@ const talkPhotos = [
   }
 
   // Setup Event Listeners
-  document.addEventListener('DOMContentLoaded', () => {
-    // Photos are already available via define:vars as 'photos' variable in this scope
-
+  function setupGallery() {
     // Attach click listeners to gallery items
     document.querySelectorAll('[data-gallery-index]').forEach(item => {
       item.addEventListener('click', () => {
         const index = parseInt(item.dataset.galleryIndex);
-        if (photos[index]) {
-           openLightbox(photos[index].src, photos[index].caption);
+        if (talkPhotos[index]) {
+           openLightbox(talkPhotos[index].src, talkPhotos[index].caption);
         }
       });
     });
@@ -115,5 +86,10 @@ const talkPhotos = [
         closeLightbox();
       }
     });
-  });
+  }
+
+  setupGallery();
+  
+  // Re-run setup on view transitions if enabled
+  document.addEventListener('astro:page-load', setupGallery);
 </script>
