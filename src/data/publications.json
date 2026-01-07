@@ -1,24 +1,162 @@
 {
-    "journals": [
-        {
-            "title": "Deep learning algorithms for advanced mammography and breast cancer analysis",
-            "venue": "PhD Thesis",
-            "year": "2025"
-        }
-    ],
-    "conferences": [
-        {
-            "title": "MICCAI ODELIA Challenge 2025: Breast MRI Malignancy Classification",
-            "venue": "MICCAI",
-            "year": "2025",
-            "note": "Ranked 4th"
-        }
-    ],
-    "patents": [
-        {
-            "title": "Secure method for unlocking medical devices",
-            "venue": "Co-inventor",
-            "year": "2020"
-        }
-    ]
+  "peerReviewed": [
+    {
+      "title": "Attention-Guided Erasing for Enhanced Transfer Learning in Breast Abnormality Classification",
+      "authors": "Panambur AB, Bhat S, Yu H, Madhu P, Bayer S, Maier A",
+      "venue": "International Journal of Computer Assisted Radiology and Surgery",
+      "year": 2025,
+      "status": "Published"
+    },
+    {
+      "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+      "authors": "Bhandary Panambur A, Bayer S, Maier A",
+      "venue": "International Conference on Computer Vision and Image Processing",
+      "year": 2025,
+      "status": "In print"
+    },
+    {
+      "title": "MammoBLIP: End-to-End Mammography Report Generation with Vision–Language Models and Public Multi-Institutional Datasets",
+      "authors": "Bhandary Panambur A, Wind S, Bayer S, Maier A",
+      "venue": "IEEE Medical Imaging Conference (MIC), Yokohama, Japan",
+      "year": 2025,
+      "status": "In print"
+    },
+    {
+      "title": "Towards Foundational Models in Mammography: Leveraging Vision-Language Models for Radiological Reasoning",
+      "authors": "Panambur AB, Bhat S, Nguyen T, Bayer S, Maier A",
+      "venue": "Journal submission",
+      "year": 2025,
+      "status": "Under internal review"
+    },
+    {
+      "title": "BE-WISE: Breast MRI Evaluation with Weakly-Informed Slice-level Explanation",
+      "authors": "Bhandary Panambur A, Nguyen T-T, Bayer S, Maier A",
+      "venue": "German Conference on Medical Image Computing (BVM)",
+      "year": 2026,
+      "status": "Accepted"
+    },
+    {
+      "title": "Attention-Guided Erasing: A Novel Augmentation Method for Enhancing Downstream Breast Density Classification",
+      "authors": "Bhandary Panambur A, Yu H, Bhat S, Madhu P, Bayer S, Maier A",
+      "venue": "BVM 2024 – German Workshop on Medical Image Computing, Erlangen, Germany",
+      "year": 2024,
+      "status": "Published"
+    },
+    {
+      "title": "Enhancing Downstream Classification of Breast Abnormalities in Contrast Enhanced Spectral Mammography using a Neighborhood Representation Loss",
+      "authors": "Bhandary Panambur A, Madhu P, Bayer S, Maier A",
+      "venue": "Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
+      "year": 2024,
+      "status": "Accepted"
+    },
+    {
+      "title": "Effect of Random Histogram Equalization on Breast Calcification Analysis Using Deep Learning",
+      "authors": "Panambur AB, Madhu P, Maier A",
+      "venue": "BVM 2022 – German Workshop on Medical Image Computing, Heidelberg",
+      "year": 2022,
+      "status": "Published"
+    },
+    {
+      "title": "Towards Improving Mammography Quality: CNN Models for Skin Fold Positioning Error Classification",
+      "authors": "Bhandary Panambur A, Fieselmann A, Biniazan R, Hümmer C, Kappler S, Bayer S, Maier A",
+      "venue": "Journal submission",
+      "year": 2025,
+      "status": "Under internal review"
+    }
+  ],
+
+  "abstractsAndClinical": [
+    {
+      "title": "LA-CLIP: Lesion-Aware Vision–Language Pretraining for Mammography via ROI-Guided Contrastive Learning",
+      "authors": "Bhandary Panambur A, Nguyen T-T, Bayer S, Maier A",
+      "venue": "European Congress of Radiology (ECR)",
+      "year": 2026,
+      "status": "Accepted"
+    },
+    {
+      "title": "Assessment of AI Performance in Detecting Breast Lesions on MRI: A Retrospective Study in a Chinese Cohort",
+      "authors": "Bhandary Panambur A, Bayer S, Maier A, Du X, Huang J, Lui S",
+      "venue": "Insights into Imaging / ECR",
+      "year": 2025,
+      "status": "Published"
+    },
+    {
+      "title": "AI-Assisted Detection of Malignant Breast Cancer in High Breast Density Cohorts: A Retrospective Comparative Study",
+      "authors": "Bhandary Panambur A, Hoang Dinh A, Chung L, Le LT, Maier A, Rodriguez Ruiz A, Andrews M, Schmitt B, Bayer S",
+      "venue": "Insights into Imaging / ECR",
+      "year": 2025,
+      "status": "Published"
+    },
+    {
+      "title": "Enhancing Mammography Screening Sensitivity with AI-Assistance: Evidence from a Vietnamese Study Cohort",
+      "authors": "Bhandary Panambur A, Hoang Dinh A, Chung L, Le LT, Maier A, Rodriguez Ruiz A, Andrews M, Schmitt B, Bayer S",
+      "venue": "Insights into Imaging / ECR",
+      "year": 2024,
+      "status": "Published"
+    }
+  ],
+
+  "otherPublications": [
+    {
+      "title": "Classification of Luminal Subtypes in Full Mammogram Images Using Transfer Learning",
+      "authors": "Panambur AB, Madhu P, Maier A",
+      "venue": "arXiv",
+      "year": 2023,
+      "status": "Preprint",
+      "id": "arXiv:2301.09282"
+    },
+    {
+      "title": "Exemplar Med-DETR: Toward Generalized and Robust Lesion Detection in Mammogram Images and Beyond",
+      "authors": "Bhat S, Georgescu B, Bhandary Panambur A, et al.",
+      "venue": "MICCAI",
+      "year": 2025,
+      "status": "Accepted"
+    },
+    {
+      "title": "MM-DETR: Emulating the Diagnostic Clinical Workflow in Multi-view Multi-modal Mammography Mass Detection",
+      "authors": "Elbarbary K, Bhandary Panambur A, Bhat S, Bayer S, Maier A",
+      "venue": "Deep-Brea3th Workshop, MICCAI",
+      "year": 2025,
+      "status": "Published"
+    },
+    {
+      "title": "Opportunistic Breast Cancer Risk Stratification from Low-Dose Chest CT Using Multiple Instance Learning",
+      "authors": "Ni Y, Bhandary Panambur A, Liu C, Nguyen T-T, Bayer S, Maier A",
+      "venue": "German Conference on Medical Image Computing (BVM)",
+      "year": 2026,
+      "status": "Accepted"
+    },
+    {
+      "title": "Patch-CLIP: Contrastive Health Record-Image Joint Training with Patch Embedding Loss",
+      "authors": "Bhat S, Mansoor A, Georgescu B, et al.",
+      "venue": "Research Square",
+      "year": 2025,
+      "status": "Preprint"
+    },
+    {
+      "title": "Unstained White Blood Cell Classification Using Deep Learning",
+      "authors": "Yu H, Forster F, Bhandary Panambur A, Merino A, Maier A, Marquardt G",
+      "venue": "International Journal of Laboratory Hematology",
+      "year": 2023,
+      "status": "Published",
+      "doi": "10.1111/ijlh.14149"
+    },
+    {
+      "title": "AUCReshaping: Improved Sensitivity at High-Specificity",
+      "authors": "Bhat S, Mansoor A, Georgescu B, Panambur AB, et al.",
+      "venue": "Scientific Reports",
+      "year": 2023,
+      "status": "Published"
+    }
+  ],
+
+  "patents": [
+    {
+      "title": "Unlocking a Medical Device",
+      "authors": "Panambur AB, Hager F, Kuth R",
+      "venue": "European Patent EP 3644550 A1",
+      "year": 2020,
+      "status": "Online A Version"
+    }
+  ]
 }
