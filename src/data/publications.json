@@ -6,7 +6,7 @@
       "venue": "International Journal of Computer Assisted Radiology and Surgery",
       "year": 2025,
       "status": "Published",
-      "url": "#"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39812891/"
     },
     {
       "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
@@ -22,7 +22,7 @@
       "venue": "IEEE Medical Imaging Conference (MIC), Yokohama, Japan",
       "year": 2025,
       "status": "In print",
-      "url": "#"
+      "url": "https://ieeexplore.ieee.org/document/11286311"
     },
     {
       "title": "Towards Foundational Models in Mammography: Leveraging Vision-Language Models for Radiological Reasoning",
@@ -46,7 +46,7 @@
       "venue": "BVM 2024 – German Workshop on Medical Image Computing, Erlangen, Germany",
       "year": 2024,
       "status": "Published",
-      "url": "#"
+      "url": "https://www.springerprofessional.de/attention-guided-erasing/26751488"
     },
     {
       "title": "Enhancing Downstream Classification of Breast Abnormalities in Contrast Enhanced Spectral Mammography using a Neighborhood Representation Loss",
@@ -54,7 +54,7 @@
       "venue": "Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
       "year": 2024,
       "status": "Accepted",
-      "url": "#"
+      "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12927/129270F/Enhancing-downstream-classification-of-breast-abnormalities-in-contrast-enhanced-spectral/10.1117/12.3004102.full"
     },
     {
       "title": "Effect of Random Histogram Equalization on Breast Calcification Analysis Using Deep Learning",
@@ -62,7 +62,7 @@
       "venue": "BVM 2022 – German Workshop on Medical Image Computing, Heidelberg",
       "year": 2022,
       "status": "Published",
-      "url": "#"
+      "url": "https://link.springer.com/chapter/10.1007/978-3-658-36932-3_38"
     },
     {
       "title": "Towards Improving Mammography Quality: CNN Models for Skin Fold Positioning Error Classification",
@@ -88,7 +88,7 @@
       "venue": "Insights into Imaging / ECR",
       "year": 2025,
       "status": "Published",
-      "url": "#"
+      "url": "https://epos.myesr.org/poster/esr/ecr2025/C-21110"
     },
     {
       "title": "AI-Assisted Detection of Malignant Breast Cancer in High Breast Density Cohorts: A Retrospective Comparative Study",
@@ -96,7 +96,7 @@
       "venue": "Insights into Imaging / ECR",
       "year": 2025,
       "status": "Published",
-      "url": "#"
+      "url": "https://epos.myesr.org/poster/esr/ecr2025/C-21046"
     },
     {
       "title": "Enhancing Mammography Screening Sensitivity with AI-Assistance: Evidence from a Vietnamese Study Cohort",
@@ -104,7 +104,7 @@
       "venue": "Insights into Imaging / ECR",
       "year": 2024,
       "status": "Published",
-      "url": "#"
+      "url": "https://epos.myesr.org/poster/esr/ecr2024/C-16214"
     }
   ],
   "otherPublications": [
@@ -115,7 +115,7 @@
       "year": 2023,
       "status": "Preprint",
       "id": "arXiv:2301.09282",
-      "url": "#"
+      "url": "https://arxiv.org/abs/2301.09282"
     },
     {
       "title": "Exemplar Med-DETR: Toward Generalized and Robust Lesion Detection in Mammogram Images and Beyond",
@@ -123,7 +123,7 @@
       "venue": "MICCAI",
       "year": 2025,
       "status": "Accepted",
-      "url": "#"
+      "url": "https://papers.miccai.org/miccai-2025/paper/2054_paper.pdf"
     },
     {
       "title": "MM-DETR: Emulating the Diagnostic Clinical Workflow in Multi-view Multi-modal Mammography Mass Detection",
@@ -131,7 +131,7 @@
       "venue": "Deep-Brea3th Workshop, MICCAI",
       "year": 2025,
       "status": "Published",
-      "url": "#"
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-05559-0_26"
     },
     {
       "title": "Opportunistic Breast Cancer Risk Stratification from Low-Dose Chest CT Using Multiple Instance Learning",
@@ -147,7 +147,7 @@
       "venue": "Research Square",
       "year": 2025,
       "status": "Preprint",
-      "url": "#"
+      "url": "https://sciety.org/articles/activity/10.21203/rs.3.rs-5959624/v1"
     },
     {
       "title": "Unstained White Blood Cell Classification Using Deep Learning",
@@ -164,7 +164,7 @@
       "venue": "Scientific Reports",
       "year": 2023,
       "status": "Published",
-      "url": "#"
+      "url": "https://www.nature.com/articles/s41598-023-48482-x"
     }
   ],
   "patents": [
@@ -174,7 +174,7 @@
       "venue": "European Patent EP 3644550 A1",
       "year": 2020,
       "status": "Withdrawn",
-      "url": "#"
+      "url": "https://patentimages.storage.googleapis.com/83/90/1d/4965b76e62fe10/EP3644550A1.pdf"
     }
   ]
 }
