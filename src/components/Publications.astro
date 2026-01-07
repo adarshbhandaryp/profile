@@ -25,7 +25,7 @@ import publications from '../data/publications.json';
               {pub.authors}
             </p>
 
-            <div class="flex flex-wrap gap-4 text-sm text-text-muted">
+            <div class="flex flex-wrap gap-4 text-sm text-text-muted items-center">
               <span class="text-accent">{pub.venue}</span>
               <span>{pub.year}</span>
 
@@ -33,6 +33,15 @@ import publications from '../data/publications.json';
                 <span class="px-2 py-[2px] rounded text-xs bg-accent/10 text-accent">
                   {pub.status}
                 </span>
+              )}
+              
+              {pub.url && (
+                <a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors flex items-center gap-1 ml-2">
+                  <span>Access the paper</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               )}
             </div>
           </div>
@@ -70,6 +79,15 @@ import publications from '../data/publications.json';
                 <span class="px-2 py-[2px] rounded text-xs bg-accent-cyan/10 text-accent-cyan">
                   {pub.status}
                 </span>
+              )}
+              
+              {pub.url && (
+                <a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors flex items-center gap-1 ml-2">
+                  <span>Access the paper</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               )}
             </div>
           </div>
@@ -114,6 +132,15 @@ import publications from '../data/publications.json';
                   {pub.id}
                 </span>
               )}
+
+              {pub.url && (
+                <a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors flex items-center gap-1 ml-2">
+                  <span>Access the paper</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              )}
             </div>
           </div>
         ))}
@@ -150,6 +177,15 @@ import publications from '../data/publications.json';
                 <span class="px-2 py-[2px] rounded text-xs bg-accent-cyan/10 text-accent-cyan">
                   {pub.status}
                 </span>
+              )}
+              
+              {pub.url && (
+                <a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors flex items-center gap-1 ml-2">
+                  <span>Access the paper</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               )}
             </div>
           </div>

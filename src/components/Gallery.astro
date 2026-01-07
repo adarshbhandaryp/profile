@@ -20,7 +20,7 @@ const talkPhotos = [
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {talkPhotos.map((photo, index) => (
-    <div class="group relative overflow-hidden rounded-xl aspect-video glass-card border border-white/10">
+    <div class="group relative overflow-hidden rounded-xl aspect-video glass-card border border-white/10 cursor-pointer" onclick={`openLightbox('${photo.src}', '${photo.caption}')`}>
       <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
       
       <img 
@@ -46,3 +46,54 @@ const talkPhotos = [
     <p class="text-xs text-text-muted/60 mt-1">Upload to /public folder</p>
   </div>
 </div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 opacity-0 pointer-events-none transition-opacity duration-300">
+  <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+  
+  <div class="max-w-7xl max-h-screen p-4 flex flex-col items-center">
+    <img id="lightbox-img" src="" alt="Zoomed View" class="max-h-[80vh] max-w-full rounded-lg shadow-2xl" />
+    <p id="lightbox-caption" class="text-white text-lg mt-4 font-medium"></p>
+  </div>
+</div>
+
+<script is:inline>
+  function openLightbox(src, caption) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    
+    if (lightbox && lightboxImg && lightboxCaption) {
+      lightboxImg.src = src;
+      lightboxCaption.textContent = caption;
+      lightbox.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    }
+  }
+
+  // Close on background click
+  document.getElementById('lightbox')?.addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') {
+      closeLightbox();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+</script>
