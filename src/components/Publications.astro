@@ -2,67 +2,160 @@
 import publications from '../data/publications.json';
 ---
 
-<div class="space-y-12">
-  
-  {publications.journals && (
-    <div>
+<div class="space-y-14">
+
+  {/* ===================== */}
+  {/* Peer-Reviewed Papers */}
+  {/* ===================== */}
+  {publications.peerReviewed && (
+    <section>
       <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
         <span class="w-8 h-[1px] bg-accent"></span>
-        Journals & Theses
+        Peer-Reviewed Publications
       </h3>
+
       <div class="space-y-4">
-        {publications.journals.map((pub) => (
+        {publications.peerReviewed.map((pub) => (
           <div class="glass-card p-6 rounded-xl">
-            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
-            <div class="flex gap-4 text-sm text-text-muted">
+            <h4 class="text-lg font-medium text-white mb-1">
+              {pub.title}
+            </h4>
+
+            <p class="text-sm text-text-muted mb-2">
+              {pub.authors}
+            </p>
+
+            <div class="flex flex-wrap gap-4 text-sm text-text-muted">
               <span class="text-accent">{pub.venue}</span>
               <span>{pub.year}</span>
+
+              {pub.status && (
+                <span class="px-2 py-[2px] rounded text-xs bg-accent/10 text-accent">
+                  {pub.status}
+                </span>
+              )}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )}
 
-  {publications.conferences && (
-    <div>
+  {/* ================================== */}
+  {/* Abstracts & Clinical Validation */}
+  {/* ================================== */}
+  {publications.abstractsAndClinical && (
+    <section>
       <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
         <span class="w-8 h-[1px] bg-accent"></span>
-        Conferences
+        Abstracts & Clinical Validation Studies
       </h3>
+
       <div class="space-y-4">
-        {publications.conferences.map((pub) => (
+        {publications.abstractsAndClinical.map((pub) => (
           <div class="glass-card p-6 rounded-xl">
-            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
-            <div class="flex gap-4 text-sm text-text-muted">
+            <h4 class="text-lg font-medium text-white mb-1">
+              {pub.title}
+            </h4>
+
+            <p class="text-sm text-text-muted mb-2">
+              {pub.authors}
+            </p>
+
+            <div class="flex flex-wrap gap-4 text-sm text-text-muted">
               <span class="text-accent">{pub.venue}</span>
               <span>{pub.year}</span>
-              {pub.note && <span class="text-accent-cyan bg-accent-cyan/10 px-2 rounded text-xs flex items-center">{pub.note}</span>}
+
+              {pub.status && (
+                <span class="px-2 py-[2px] rounded text-xs bg-accent-cyan/10 text-accent-cyan">
+                  {pub.status}
+                </span>
+              )}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )}
 
+  {/* ===================== */}
+  {/* Other Publications */}
+  {/* ===================== */}
+  {publications.otherPublications && (
+    <section>
+      <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
+        <span class="w-8 h-[1px] bg-accent"></span>
+        Other Publications & Preprints
+      </h3>
+
+      <div class="space-y-4">
+        {publications.otherPublications.map((pub) => (
+          <div class="glass-card p-6 rounded-xl">
+            <h4 class="text-lg font-medium text-white mb-1">
+              {pub.title}
+            </h4>
+
+            <p class="text-sm text-text-muted mb-2">
+              {pub.authors}
+            </p>
+
+            <div class="flex flex-wrap gap-4 text-sm text-text-muted">
+              <span class="text-accent">{pub.venue}</span>
+              <span>{pub.year}</span>
+
+              {pub.status && (
+                <span class="px-2 py-[2px] rounded text-xs bg-white/10 text-white">
+                  {pub.status}
+                </span>
+              )}
+
+              {pub.id && (
+                <span class="text-xs italic opacity-70">
+                  {pub.id}
+                </span>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {/* ========= */}
+  {/* Patents */}
+  {/* ========= */}
   {publications.patents && (
-    <div>
+    <section>
       <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-3">
         <span class="w-8 h-[1px] bg-accent"></span>
         Patents
       </h3>
+
       <div class="space-y-4">
         {publications.patents.map((pub) => (
           <div class="glass-card p-6 rounded-xl border-l-4 border-l-accent-cyan">
-            <h4 class="text-lg font-medium text-white mb-1">{pub.title}</h4>
-            <div class="flex gap-4 text-sm text-text-muted">
+            <h4 class="text-lg font-medium text-white mb-1">
+              {pub.title}
+            </h4>
+
+            <p class="text-sm text-text-muted mb-2">
+              {pub.authors}
+            </p>
+
+            <div class="flex flex-wrap gap-4 text-sm text-text-muted">
               <span class="text-accent-cyan">{pub.venue}</span>
               <span>{pub.year}</span>
+
+              {pub.status && (
+                <span class="px-2 py-[2px] rounded text-xs bg-accent-cyan/10 text-accent-cyan">
+                  {pub.status}
+                </span>
+              )}
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )}
 
 </div>
