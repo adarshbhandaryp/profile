@@ -79,28 +79,32 @@
       "authors": "Bhandary Panambur A, Nguyen T-T, Bayer S, Maier A",
       "venue": "European Congress of Radiology (ECR)",
       "year": 2026,
-      "status": "Accepted"
+      "status": "Accepted",
+      "url": "#"
     },
     {
       "title": "Assessment of AI Performance in Detecting Breast Lesions on MRI: A Retrospective Study in a Chinese Cohort",
       "authors": "Bhandary Panambur A, Bayer S, Maier A, Du X, Huang J, Lui S",
       "venue": "Insights into Imaging / ECR",
       "year": 2025,
-      "status": "Published"
+      "status": "Published",
+      "url": "#"
     },
     {
       "title": "AI-Assisted Detection of Malignant Breast Cancer in High Breast Density Cohorts: A Retrospective Comparative Study",
       "authors": "Bhandary Panambur A, Hoang Dinh A, Chung L, Le LT, Maier A, Rodriguez Ruiz A, Andrews M, Schmitt B, Bayer S",
       "venue": "Insights into Imaging / ECR",
       "year": 2025,
-      "status": "Published"
+      "status": "Published",
+      "url": "#"
     },
     {
       "title": "Enhancing Mammography Screening Sensitivity with AI-Assistance: Evidence from a Vietnamese Study Cohort",
       "authors": "Bhandary Panambur A, Hoang Dinh A, Chung L, Le LT, Maier A, Rodriguez Ruiz A, Andrews M, Schmitt B, Bayer S",
       "venue": "Insights into Imaging / ECR",
       "year": 2024,
-      "status": "Published"
+      "status": "Published",
+      "url": "#"
     }
   ],
   "otherPublications": [
@@ -110,35 +114,40 @@
       "venue": "arXiv",
       "year": 2023,
       "status": "Preprint",
-      "id": "arXiv:2301.09282"
+      "id": "arXiv:2301.09282",
+      "url": "#"
     },
     {
       "title": "Exemplar Med-DETR: Toward Generalized and Robust Lesion Detection in Mammogram Images and Beyond",
       "authors": "Bhat S, Georgescu B, Bhandary Panambur A, et al.",
       "venue": "MICCAI",
       "year": 2025,
-      "status": "Accepted"
+      "status": "Accepted",
+      "url": "#"
     },
     {
       "title": "MM-DETR: Emulating the Diagnostic Clinical Workflow in Multi-view Multi-modal Mammography Mass Detection",
       "authors": "Elbarbary K, Bhandary Panambur A, Bhat S, Bayer S, Maier A",
       "venue": "Deep-Brea3th Workshop, MICCAI",
       "year": 2025,
-      "status": "Published"
+      "status": "Published",
+      "url": "#"
     },
     {
       "title": "Opportunistic Breast Cancer Risk Stratification from Low-Dose Chest CT Using Multiple Instance Learning",
       "authors": "Ni Y, Bhandary Panambur A, Liu C, Nguyen T-T, Bayer S, Maier A",
       "venue": "German Conference on Medical Image Computing (BVM)",
       "year": 2026,
-      "status": "Accepted"
+      "status": "Accepted",
+      "url": "#"
     },
     {
       "title": "Patch-CLIP: Contrastive Health Record-Image Joint Training with Patch Embedding Loss",
       "authors": "Bhat S, Mansoor A, Georgescu B, et al.",
       "venue": "Research Square",
       "year": 2025,
-      "status": "Preprint"
+      "status": "Preprint",
+      "url": "#"
     },
     {
       "title": "Unstained White Blood Cell Classification Using Deep Learning",
@@ -146,14 +155,16 @@
       "venue": "International Journal of Laboratory Hematology",
       "year": 2023,
       "status": "Published",
-      "doi": "10.1111/ijlh.14149"
+      "doi": "10.1111/ijlh.14149",
+      "url": "#"
     },
     {
       "title": "AUCReshaping: Improved Sensitivity at High-Specificity",
       "authors": "Bhat S, Mansoor A, Georgescu B, Panambur AB, et al.",
       "venue": "Scientific Reports",
       "year": 2023,
-      "status": "Published"
+      "status": "Published",
+      "url": "#"
     }
   ],
   "patents": [
@@ -162,7 +173,8 @@
       "authors": "Panambur AB, Hager F, Kuth R",
       "venue": "European Patent EP 3644550 A1",
       "year": 2020,
-      "status": "Withdrawn"
+      "status": "Withdrawn",
+      "url": "#"
     }
   ]
 }
