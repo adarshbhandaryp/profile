@@ -16,8 +16,8 @@ const talkPhotos = [
   },
   {
     src: "/profile/spie.jpeg",
-    alt: "Poster Presentation at Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
-    caption: "Poster Presentation at SPIE Medical Imaging 2024"
+    alt: "Oral Presentation at Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
+    caption: "Oral Presentation at SPIE Medical Imaging 2024"
   },
   {
     src: "/profile/prs2025.jpeg",
@@ -27,7 +27,6 @@ const talkPhotos = [
 ];
 ---
 
-<div id="gallery-data" data-photos={JSON.stringify(talkPhotos)} class="hidden"></div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {talkPhotos.map((photo, index) => (
@@ -61,7 +60,10 @@ const talkPhotos = [
   </div>
 </div>
 
-<script is:inline>
+<script define:vars={{ talkPhotos }}>
+  // Make photos available globally or within this closure
+  const photos = talkPhotos;
+
   function openLightbox(src, caption) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -85,16 +87,7 @@ const talkPhotos = [
 
   // Setup Event Listeners
   document.addEventListener('DOMContentLoaded', () => {
-    const galleryData = document.getElementById('gallery-data');
-    let photos = [];
-    
-    if (galleryData && galleryData.dataset.photos) {
-      try {
-        photos = JSON.parse(galleryData.dataset.photos);
-      } catch (e) {
-        console.error('Error parsing gallery photos', e);
-      }
-    }
+    // Photos are already available via define:vars as 'photos' variable in this scope
 
     // Attach click listeners to gallery items
     document.querySelectorAll('[data-gallery-index]').forEach(item => {
