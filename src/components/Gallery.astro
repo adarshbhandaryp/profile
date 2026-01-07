@@ -1,0 +1,48 @@
+---
+const talkPhotos = [
+  {
+    src: "/profile_photo.jpg", // Placeholder until user adds more photos
+    alt: "Speaking at AI Conf 2024",
+    caption: "Keynote at AI Conf 2024"
+  },
+  {
+    src: "/profile_photo.jpg",
+    alt: "Workshop on LLMs",
+    caption: "Workshop on LLMs"
+  },
+  {
+    src: "/profile_photo.jpg",
+    alt: "Panel Discussion",
+    caption: "Panel Discussion"
+  }
+];
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {talkPhotos.map((photo, index) => (
+    <div class="group relative overflow-hidden rounded-xl aspect-video glass-card border border-white/10">
+      <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+      
+      <img 
+        src={photo.src} 
+        alt={photo.alt}
+        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+      />
+      
+      <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300 z-20">
+        <p class="text-white font-medium text-sm">{photo.caption}</p>
+      </div>
+    </div>
+  ))}
+  
+  <!-- Upload Placeholder -->
+  <div class="rounded-xl border-2 border-dashed border-white/10 flex flex-col items-center justify-center p-8 text-center hover:border-accent/50 transition-colors group cursor-pointer h-full min-h-[200px]">
+    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-text-muted group-hover:text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+      </svg>
+    </div>
+    <p class="text-text-muted text-sm font-medium group-hover:text-white transition-colors">Add more photos</p>
+    <p class="text-xs text-text-muted/60 mt-1">Upload to /public folder</p>
+  </div>
+</div>

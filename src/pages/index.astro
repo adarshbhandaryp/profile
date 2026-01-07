@@ -9,6 +9,7 @@ import Publications from '../components/Publications.astro';
 import SkillsGrid from '../components/SkillsGrid.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import Gallery from '../components/Gallery.astro';
 
 import projects from '../data/projects.json';
 import education from '../data/education.json';
@@ -42,6 +43,11 @@ import education from '../data/education.json';
     <Section id="publications" className="scroll-mt-20">
       <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Publications</h2>
       <Publications />
+    </Section>
+
+    <Section id="gallery" className="scroll-mt-20">
+      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-16">Speaking & Gallery</h2>
+      <Gallery />
     </Section>
 
     <Section id="skills" className="scroll-mt-20">
