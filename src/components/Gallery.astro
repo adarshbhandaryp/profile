@@ -1,19 +1,28 @@
----
 const talkPhotos = [
   {
-    src: "/profile/public/bvm2024.jpeg", // Placeholder until user adds more photos
+    src: "/profile/bvm2024.jpeg",
     alt: "Oral Presentation on Attention-Guided Erasing at BVM 2024, Erlangen, Germany",
     caption: "Oral Presentation on Attention-Guided Erasing at BVM 2024"
   },
   {
-    src: "/profile/public/cvip2025.jpeg",
+    src: "/profile/cvip2025.jpeg",
     alt: "Oral Presentation on Dataset-Informed Transfer Learning (DITL) at CVIP 2025, Punjab, IIT Ropar, India",
-    caption: "Oral Presentation on Dataset-Informed Transfer Learning (DITL) at CVIP 2025 at CVIP 2025, Punjab, IIT Ropar, India"
+    caption: "Oral Presentation on DITL at CVIP 2025, IIT Ropar, India"
   },
   {
-    src: "/profile/public/ieee.jpeg",
+    src: "/profile/ieee.jpeg",
     alt: "Oral Presentation on MammoBLIP at IEEE Medical Imaging Conference (MIC) 2025, Yokohama, Japan",
-    caption: "Oral Presentation on MammoBLIP at IEEE Medical Imaging Conference (MIC) 2025, Yokohama, Japan"
+    caption: "Oral Presentation on MammoBLIP at IEEE MIC 2025, Yokohama"
+  },
+  {
+    src: "/profile/spie.jpeg",
+    alt: "Poster Presentation at Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
+    caption: "Poster Presentation at SPIE Medical Imaging 2024"
+  },
+  {
+    src: "/profile/prs2025.jpeg",
+    alt: "Presentation at Pattern Recognition Symposium, Austria",
+    caption: "Pattern Recognition Symposium, Austria"
   }
 ];
 ---
@@ -34,17 +43,6 @@ const talkPhotos = [
       </div>
     </div>
   ))}
-  
-  <!-- Upload Placeholder -->
-  <div class="rounded-xl border-2 border-dashed border-white/10 flex flex-col items-center justify-center p-8 text-center hover:border-accent/50 transition-colors group cursor-pointer h-full min-h-[200px]">
-    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-text-muted group-hover:text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-      </svg>
-    </div>
-    <p class="text-text-muted text-sm font-medium group-hover:text-white transition-colors">Add more photos</p>
-    <p class="text-xs text-text-muted/60 mt-1">Upload to /public folder</p>
-  </div>
 </div>
 
 <!-- Lightbox Modal -->
