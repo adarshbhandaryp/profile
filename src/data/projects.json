@@ -7,7 +7,7 @@
             "Transformers",
             "Medical Imaging"
         ],
-        "link": "#"
+        "link": "https://lme.tf.fau.de/wp-content/uploads/2020/08/MammoBLIP__End_to_End_Mammography_Report_Generation_Using_a_Curated__Standardized_Multi_Institutional_Public_Dataset-1.pdf"
     },
     {
         "title": "Large-Scale Mammography Dataset",
@@ -17,7 +17,7 @@
             "Data Curation",
             "Python"
         ],
-        "link": "#"
+        "link": "#https://lme.tf.fau.de/wp-content/uploads/2020/08/MammoBLIP__End_to_End_Mammography_Report_Generation_Using_a_Curated__Standardized_Multi_Institutional_Public_Dataset-1.pdf"
     },
     {
         "title": "MICCAI ODELIA Challenge 2025",
@@ -27,11 +27,11 @@
             "MRI",
             "Competition"
         ],
-        "link": "#"
+        "link": "https://odelia2025.grand-challenge.org/evaluation/final-evaluation/leaderboard/"
     },
     {
-        "title": "Mammography Lesion Detection",
-        "description": "Self-supervised learning methods improving classification and lesion detection performance.",
+        "title": "Mammography Image Classification",
+        "description": "Transfer learning methods improving lesion classification performance.",
         "tags": [
             "Self-Supervised Learning",
             "Detection",
