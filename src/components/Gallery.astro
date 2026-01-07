@@ -27,9 +27,11 @@ const talkPhotos = [
 ];
 ---
 
+<div id="gallery-data" data-photos={JSON.stringify(talkPhotos)} class="hidden"></div>
+
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   {talkPhotos.map((photo, index) => (
-    <div class="group relative overflow-hidden rounded-xl aspect-video glass-card border border-white/10 cursor-pointer" data-gallery-item data-src={photo.src} data-caption={photo.caption}>
+    <div class="group relative overflow-hidden rounded-xl aspect-video glass-card border border-white/10 cursor-pointer" data-gallery-index={index}>
       <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
       
       <img 
@@ -47,7 +49,7 @@ const talkPhotos = [
 
 <!-- Lightbox Modal -->
 <div id="lightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 opacity-0 pointer-events-none transition-opacity duration-300">
-  <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-50">
+  <button id="close-lightbox-btn" class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors z-50">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     </svg>
@@ -81,24 +83,44 @@ const talkPhotos = [
     }
   }
 
-  // Close on background click
-  document.getElementById('lightbox')?.addEventListener('click', (e) => {
-    if (e.target.id === 'lightbox') {
-      closeLightbox();
+  // Setup Event Listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryData = document.getElementById('gallery-data');
+    let photos = [];
+    
+    if (galleryData && galleryData.dataset.photos) {
+      try {
+        photos = JSON.parse(galleryData.dataset.photos);
+      } catch (e) {
+        console.error('Error parsing gallery photos', e);
+      }
     }
-  });
 
-  // Close on Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeLightbox();
-    }
-  });
+    // Attach click listeners to gallery items
+    document.querySelectorAll('[data-gallery-index]').forEach(item => {
+      item.addEventListener('click', () => {
+        const index = parseInt(item.dataset.galleryIndex);
+        if (photos[index]) {
+           openLightbox(photos[index].src, photos[index].caption);
+        }
+      });
+    });
 
-  // Attach click listeners to gallery items
-  document.querySelectorAll('[data-gallery-item]').forEach(item => {
-    item.addEventListener('click', () => {
-      openLightbox(item.dataset.src, item.dataset.caption);
+    // Close button listener
+    document.getElementById('close-lightbox-btn')?.addEventListener('click', closeLightbox);
+
+    // Close on background click
+    document.getElementById('lightbox')?.addEventListener('click', (e) => {
+      if (e.target.id === 'lightbox') {
+        closeLightbox();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
     });
   });
 </script>
