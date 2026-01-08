@@ -4,7 +4,8 @@
         "items": [
             "Python",
             "MATLAB",
-            "C++"
+            "C++",
+            "LaTeX"
         ]
     },
     {
@@ -13,7 +14,11 @@
             "Self-supervised Learning",
             "Multimodal Learning",
             "Vision-Language Models",
-            "LVLMs"
+            "LVLMs",
+            "Generative AI",
+            "Diffusion Models",
+            "Transformers",
+            "LLMs"
         ]
     },
     {
@@ -37,7 +42,9 @@
             "SLURM",
             "Axolotl",
             "DeepSpeed",
-            "SGLang"
+            "SGLang",
+            "WandB",
+            "Linux"
         ]
     },
     {
