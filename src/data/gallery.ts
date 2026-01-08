@@ -12,12 +12,12 @@ export const talkPhotos = [
     {
         src: "/home/ieee.jpeg",
         alt: "Oral Presentation on MammoBLIP at IEEE Medical Imaging Conference (MIC) 2025, Yokohama, Japan",
-        caption: "Oral Presentation on MammoBLIP at IEEE MIC 2025, Yokohama"
+        caption: "Oral Presentation on MammoBLIP at IEEE MIC 2025, Yokohama, Japan"
     },
     {
         src: "/home/spie.jpeg",
         alt: "Poster Presentation at Medical Imaging 2024: Computer-Aided Diagnosis (SPIE)",
-        caption: "Poster Presentation at SPIE Medical Imaging 2024"
+        caption: "Poster Presentation at SPIE Medical Imaging 2024, San Diego, USA"
     },
     {
         src: "/home/prs2025.jpeg",
